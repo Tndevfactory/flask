@@ -23,6 +23,11 @@ md flask
   web: gunicorn app:app
 
 
-heroku create flaskappcrudtn
-git remote -v
-git push heroku master
+  heroku create flaskappcrudtn
+  git remote -v
+  git push heroku master
+  
+  # debug heroku 
+  heroku run printenv
+  heroku restart
+
