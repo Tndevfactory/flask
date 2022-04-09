@@ -11,3 +11,18 @@ md flask
  python3
  from app import db 
  db.create_create()
+
+ #heroku upload
+ make you sure you are under venv environement
+ 
+ heroku login 
+ git init 
+ pip3 install gunicorn
+ pip3 freeze > requirements.txt
+ touch Procfile # inside Procfile
+  web: gunicorn
+
+
+heroku create flaskappcrudtn
+git remote -v
+git push heroku master
