@@ -1,0 +1,13 @@
+md flask
+ exec bash  #
+ pip3 install virtualenv  #  install virtual env
+ virtualenv venv  #  creation 
+ source venv/bin/activate  # activation
+ pip3 install flask flask-sqlalchemy # install flask and sql orm
+ touch app.py #
+ python3 app.py # run localhost http://127.0.0.1:5000 
+ pip3 freeze > requirements.txt # copy requirements.txt
+ #interactive shell
+ python3
+ from app import db 
+ db.create_create()
