@@ -20,7 +20,7 @@ md flask
  pip3 install gunicorn
  pip3 freeze > requirements.txt
  touch Procfile # inside Procfile
-  web: gunicorn
+  web: gunicorn app:app
 
 
 heroku create flaskappcrudtn
